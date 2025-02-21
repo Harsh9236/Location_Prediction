@@ -4,12 +4,12 @@ import json
 from io import BytesIO
 from PIL import Image
 
-OPENROUTER_API_KEY = ""
+OPENROUTER_API_KEY = "API key here"
 API_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 MODEL_NAME = "google/gemini-2.0-flash-thinking-exp:free"
 
 IMAGE_FILE_PATH = "./test_image.jpg"
-TEXT_PROMPT = "Can you guess the location of the image? Please enclose your guess within less than and greater than signs. For example: <Your Guess>."
+TEXT_PROMPT = "Can you guess the country of the image? Please enclose your guess within less than and greater than signs. For example: <Your Guess>."
 OUTPUT_FILE_PATH = "model_response.txt"
 
 def encode_image_to_base64(image_path):
